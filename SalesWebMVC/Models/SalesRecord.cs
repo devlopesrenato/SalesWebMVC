@@ -7,21 +7,21 @@ namespace SalesWebMVC.Models
     {
         public int Id { get; set; }
         public DateTime Date { get; set; }
-        public double Amounnt { get; set; }
+        public double Amount { get; set; }
         public SaleStatus Status { get; set; }
-        public Seller Saller { get; set; }
+        public Seller Seller { get; set; }
 
         public SalesRecord() 
         {
         }
 
-        public SalesRecord(int id, DateTime date, double amounnt, SaleStatus status, Seller saller)
+        public SalesRecord(int id, DateTime date, double amount, SaleStatus status, Seller seller)
         {
             Id = id;
             Date = date;
-            Amounnt = amounnt;
+            Amount = amount;
             Status = status;
-            Saller = saller;
+            Seller = seller;
         }
     }
 }

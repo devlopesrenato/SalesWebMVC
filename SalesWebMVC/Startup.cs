@@ -10,6 +10,7 @@ using Microsoft.EntityFrameworkCore;
 using SalesWebMVC.Data;
 using SalesWebMVC.Services;
 using System.Collections.Generic;
+using SalesWebMvc.Data;
 
 namespace SalesWebMVC
 {
@@ -42,6 +43,7 @@ namespace SalesWebMVC
             services.AddScoped<SeedingService>();
             services.AddScoped<SellerService>();
             services.AddScoped<DepartmentService>();
+            services.AddScoped<SalesRecordService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -64,8 +64,8 @@ namespace SalesWebMVC.Models
         public double TotalSales(DateTime initial, DateTime final)
         {
             return Sales
-                    .Where(sr => sr.Date >= initial && sr.Date <= final)
-                    .Sum(sr => sr.Amounnt);
+                    .Where(sr => sr.Date >= initial && sr.Date <= final && sr.Status.ToString() != "Canceled")
+                    .Sum(sr => sr.Amount);
         }
     }
 }
